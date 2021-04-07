@@ -51,10 +51,13 @@ function draw() {
 
  
 	
-if(star.y > 470 && starBody.position.y > 470 ){
-	if(fairy.isTouching(star)){
-		Matter.Body.setStatic(starBody,true);
-		fairyVoice.play();
+
+  if(star.y > 470 && starBody.position.y > 470 ){
+  	Matter.Body.setStatic(starBody,true);
+  }
+
+  drawSprites();
+
 	  }
 
 	}
